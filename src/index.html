@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../public/dist/css/tailwind.css">
+    <title>Home Page</title>
+
+    <!-- Fonte Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Arquivo Tailwind CSS -->
+    <link rel="stylesheet" href="../public/dist/css/tailwind.css">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="../public/dist/css/global.css">
+</head>
+<body class="bg-gray-100 dark:bg-black">
+    <header>
+        <div class="container mx-auto flex justify-between h-24 py-4 text-white items-center">
+            <h1 class="uppercase text-black font-bold">Logo</h1>
+            <nav>
+                <ul class="flex gap-4 text-sm text-gray-500 font-bold">
+                    <li><a class="hover:text-gray-800 hover:underline" href="#">Como reservar</a></li>
+                    <li><a class="hover:text-gray-800 hover:underline" href="#">Sobre nós</a></li>
+                    <li><a class="hover:text-gray-800 hover:underline" href="#">Informações</a></li>
+                    <li><a class="hover:text-gray-800 hover:underline" href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="banner">
+        <div class="container mx-auto flex flex-col text-white items-center justify-center h-full">
+            <div >
+                <div class="text-center space-y-4">
+                    <h1 class="text-gray-200 text-4xl">Onde você quer ir?</h1>
+                    <p class="text-gray-200 text-lg">Escolha o estado e cidade para achar os melhores resorts.</p>
+                </div>
+                <div class="text-gray-500 mt-4 text-sm font-medium">
+                    <form class="flex flex-wrap justify-center gap-4 text-sm">
+                        <select class="py-2 px-3 rounded border border-gray-300">
+                            <option selected disabled>Escolha estado</option>
+                            <option value="ES">Espirito Santo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="BA">Bahia</option>
+                        </select>
+                        <select class="py-2 px-3 rounded border border-gray-300">
+                            <option selected disabled>Escolha cidade</option>
+                            <option value="Vix">Vitória</option>
+                            <option value="Rio">Rio de Janeiro</option>
+                            <option value="Sampa">São Paulo</option>
+                            <option value="Porto">Porto Seguro</option>
+                            <option value="Salv">Salvador</option>
+                        </select>
+                        <button class="flex gap-1 items-center btn">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+
+                            Pesquisar resorts</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="sm:my-20">
+        <div class="container p-10 sm:p-0 mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="space-y-4 text-sm text-justify text-gray-600">
+                <span class="uppercase text-xs text-gray-500 font-bold bg-amber-100 p-2 rounded-md">Resort em destaque</span>
+                <h2 class="text-xl">Ecoresort Praia do Forte Bahia</h2>
+                <p class="font-bold">Hotel qualidade 5 Estrelas</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+                <p>Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <button class="flex gap-1 items-center btn">Solicitar reserva
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </button>
+            </div>
+            <div class="row-start-1 sm:row-auto flex justify-center">
+                <img class="w-full sm:w-max object-cover shadow-lg rounded-lg inset-0" src="../public/dist/img/featured-img.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="sm:my-20">
+        <div class="p-10 sm:p-0 container mx-auto">
+            <h2 class="text-center text-gray-500 font-medium text-xl mb-4">Conheça mais resorts</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-4 grid-rows-2 gap-6">
+                <div class="relative col-span-2 row-span-2 ">
+                    <div class="absolute w-full h-full bg-black opacity-30 rounded-lg"></div>
+                    <img class="absolute bottom-0 left-0 right-0 h-10 rounded-lg" src="../public/dist/img/image-shadow.png" alt="">
+                    <img class="object-cover w-full h-full shadow-lg inset-0 rounded-lg" src="../public/dist/img/hotel-1.jpeg" alt="">
+                </div>
+                <div class="relative col-span-2 shadow-lg h-60 ">
+                    <div class="absolute w-full h-full bg-black opacity-30 rounded-lg"></div>
+                    <img class="absolute bottom-0 left-0 right-0 h-10 rounded-lg" src="../public/dist/img/image-shadow.png" alt="">
+                    <img class="object-cover w-full h-full shadow-lg inset-0 rounded-lg" src="../public/dist/img/hotel-2.jpeg" alt="">
+                </div>
+                <div class="relative shadow-lg h-40 sm:h-60">
+                    <div class="absolute w-full h-full bg-black opacity-30 rounded-lg"></div>
+                    <img class="absolute bottom-0 left-0 right-0 h-10 rounded-lg" src="../public/dist/img/image-shadow.png" alt="">
+                    <img class="object-cover w-full h-full shadow-lg inset-0 rounded-lg" src="../public/dist/img/hotel-3.jpeg" alt="">
+                </div>
+                <div class="relative shadow-lg h-40 sm:h-60">
+                    <div class="absolute w-full h-full bg-black opacity-30 rounded-lg"></div>
+                    <img class="absolute bottom-0 left-0 right-0 h-10 rounded-lg" src="../public/dist/img/image-shadow.png" alt="">
+                    <img class="object-cover w-full h-full shadow-lg inset-0 rounded-lg" src="../public/dist/img/hotel-4.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sm:my-20">
+        <div class="container p-10 sm:p-0 mx-auto">
+            <div class="text-gray-500 mt-4 text-sm font-medium">
+                <form class="flex flex-wrap justify-center gap-4 text-sm">
+                    <select class="py-2 px-3 rounded border border-gray-300">
+                        <option selected disabled>Escolha estado</option>
+                        <option value="ES">Espirito Santo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="BA">Bahia</option>
+                    </select>
+                    <select class="py-2 px-3 rounded border border-gray-300">
+                        <option selected disabled>Escolha cidade</option>
+                        <option value="Vix">Vitória</option>
+                        <option value="Rio">Rio de Janeiro</option>
+                        <option value="Sampa">São Paulo</option>
+                        <option value="Porto">Porto Seguro</option>
+                        <option value="Salv">Salvador</option>
+                    </select>
+                    <button class="flex gap-1 items-center btn">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+
+                        Pesquisar resorts</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <footer class="sm:my-20">
+        <div class="container p-10 sm:p-0 mx-auto flex justify-between">
+            <h1 class="uppercase text-black font-bold">Logo</h1>
+            <div>
+                <img class="inline" src="../public/dist/img/icon-facebook.png">
+                <img class="inline" src="../public/dist/img/icon-instagram.png">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

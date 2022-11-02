@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.banner{
+    background: url('../img/hero-image-1.png');
+    @apply bg-no-repeat bg-cover;
+    height: 450px;
+}
+
+@layer components {
+    .btn{
+        @apply bg-amber-500 text-sm font-medium py-2 px-3 rounded border border-amber-500;
+    }
+}
